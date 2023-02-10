@@ -1,0 +1,68 @@
+/* import google font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    background: #E3F2FD;
+
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.container .color {
+    background: #fff;
+    margin: 13px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 6px;
+    list-style: none;
+    box-shadow: 0 10px 15px black;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+.container .color:active{
+    transform: scale(0.95);
+}
+.color .rect-box{
+    width: 185px;
+    height: 178px;
+    background: #8a6cff ;
+}
+.color:hover .rect-box{
+    filter: brightness(106%);
+}
+.color .hex-value{
+    font-size:1.15rem;
+    font-weight: 500;
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+
+}
+.refresh-btn{
+   padding: 12px 20px; 
+   font-size: 1.1rem;
+   font-weight: 500;
+   border: 2px solid #fff;
+   color: #fff;
+   background: #619ed0;
+   outline: none;
+   cursor: pointer;
+   border-radius: 5px;
+   box-shadow: 0px 15px 25px rgb(100, 95, 95);
+   position: fixed;
+   left: 45%;
+   bottom: 10%;
+   transform: translateX(-50%);
+}
